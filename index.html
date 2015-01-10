@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Atomic UI - Minimal UI Collection for Developers</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div class="header">
+		<div class="content">
+			<div class="logo"></div>
+		</div>
+	</div>
+	<!-- /.header -->
+
+	<div class="main">
+		<div class="content">
+			
+			<section class="buttons">
+				<button class="atomic button accept">Accept</button>
+				<button class="atomic button cancel">Cancel</button>
+				<button class="atomic button disabled">Disabled</button>
+			</section>
+
+
+
+
+		</div>
+	</div>
+	<!-- /.main -->
+
+	<div class="footer">
+		<div class="content">
+			
+		</div>
+	</div>
+	<!-- /.footer -->
+
+</body>
+
+
+<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+
+<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+
+<script type="text/javascript" src="js/jquery.firefly-0.3.js"></script>
+
+
+<script type="text/javascript">
+
+
+	$('.header').mousemove(function(e){
+		var amountMovedX = (e.pageX * -1 / 8);
+		var amountMovedY = (e.pageY * -1 / 8);
+		$('.header').css('background-position', amountMovedX + 'px ' + amountMovedY + 'px');
+	});
+
+	$.firefly({
+		color: '#e75151',
+		minPixel: 1,
+		maxPixel: 2,
+		total : 70,
+		on: '.header'
+	});
+
+</script>
+
+</html>
+
+<div class="credits">
+	<div>Icon made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed under <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
+</div>
+<!-- /.credits -->

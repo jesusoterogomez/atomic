@@ -1,0 +1,82 @@
+/* Defaults */
+$border-radius:4px;
+
+$color-disabled:#666;
+$color-default:green;
+$color-primary:blue;
+$color-cancel:red;
+
+$bg-disabled:#ccc;
+$bg-default:green;
+$bg-primary:#108EF2;
+$bg-cancel:#F24C3D;
+
+$color-on-dark:#fff;
+$color-on-light:#000;
+
+$padding-default:8px 14px;
+
+$content-width:980px;
+.body{
+	width: 100%;
+	position: relative;
+}
+.content{
+	width: $content-width;
+	margin: 0 auto;
+	height: 100%;
+	position: relative;
+}
+
+.atomic{
+	font:12pt 'Lato', sans-serif;
+}
+.credits{
+	display: none;
+}
+
+
+.header{
+	background: #21262e;
+	height: 250px;
+	position: relative;
+	.logo{
+		background: url(../img/logo.png);
+		width: 378px;
+		display: block;
+		margin: 0 auto;
+		position: absolute;
+		top: 50%;
+		height: 104px;
+		left: 50%;
+		margin-left: -(378px/2);
+		margin-top: -(104px/2);
+	}
+}
+
+//UI Elements
+
+.button{
+	&.atomic{
+		outline: 0;
+		border:none;
+		border-radius:$border-radius;
+		padding:$padding-default;
+		&.disabled{
+			color: $color-disabled;
+			background: $bg-disabled;
+		}
+		&.accept{
+			color: $color-on-dark;
+			background: $bg-primary;			
+		}
+		&.cancel{
+			color: $color-on-dark;
+			background: $bg-cancel;
+		}
+		&:active{
+			transform: scale(0.95,0.95);
+		}	
+	}
+
+}

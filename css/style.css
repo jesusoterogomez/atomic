@@ -1,0 +1,17 @@
+/* Defaults */
+.body { width: 100%; position: relative; }
+
+.content { width: 980px; margin: 0 auto; height: 100%; position: relative; }
+
+.atomic { font: 12pt 'Lato', sans-serif; }
+
+.credits { display: none; }
+
+.header { background: #21262e; height: 250px; position: relative; }
+.header .logo { background: url(../img/logo.png); width: 378px; display: block; margin: 0 auto; position: absolute; top: 50%; height: 104px; left: 50%; margin-left: -189px; margin-top: -52px; }
+
+.button.atomic { outline: 0; border: none; border-radius: 4px; padding: 8px 14px; }
+.button.atomic.disabled { color: #666; background: #ccc; }
+.button.atomic.accept { color: #fff; background: #108EF2; }
+.button.atomic.cancel { color: #fff; background: #F24C3D; }
+.button.atomic:active { -webkit-transform: scale(0.95, 0.95); -ms-transform: scale(0.95, 0.95); transform: scale(0.95, 0.95); }

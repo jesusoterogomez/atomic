@@ -1,0 +1,25 @@
+{
+  "name": "atomic",
+  "version": "0.0.0",
+  "description": "Minimal UI Components for Web Developers",
+  "main": "atomic-ui.js",
+  "keywords": [
+    "css",
+    "js",
+    "ui",
+    "ux",
+    "minimal"
+  ],
+  "authors": [
+    "Jesús Otero"
+  ],
+  "license": "MIT",
+  "homepage": "http://atomic.jesusoterogomez.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
