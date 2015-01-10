@@ -11,7 +11,7 @@ body { width: 100%; position: relative; font: 12pt 'Lato', sans-serif; }
 
 .credits { display: none; }
 
-.header { background: #21262e; background: #313945; height: 280px; position: relative; }
+.header { background: #1e242e; height: 280px; position: relative; }
 .header .logo { background: url(../img/logo.png); width: 378px; display: block; margin: 0 auto; position: absolute; top: 50%; height: 104px; left: 50%; margin-left: -189px; margin-top: -52px; -webkit-transition: all 0.3s ease; transition: all 0.3s ease; }
 .header .tagline { position: absolute; bottom: 45px; width: 100%; }
 .header .tagline h1 { text-align: center; color: #fff; font-weight: 300; font-size: 11pt; opacity: 0.9; }
