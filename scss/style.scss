@@ -53,9 +53,10 @@ body{
 
 .header{
 	background: #21262e;
+	background:#313945;
 	height: 280px;
 	position: relative;
-	overflow: hidden;
+	// overflow: hidden;
 	.logo{
 		background: url(../img/logo.png);
 		width: 378px;
@@ -93,7 +94,7 @@ body{
 				display: inline-block;
 				margin: 10px;
     	transition: all 0.3s ease;
-				
+
 			}
 			.donate{
 				background: #f3d661;
@@ -154,7 +155,7 @@ body{
 			text-align: center;
 		}
 		.logo{
-			transform: scale(0.9,0.9);
+			transform: scale(0.7,0.7);
 		}
 	}	
 }
