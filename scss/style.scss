@@ -17,7 +17,7 @@ $color-on-light:#000;
 $padding-default:8px 14px;
 
 $content-width:80%;
-$content-min-width:980px;
+// $content-min-width:980px;
 body{
 	width: 100%;
 	position: relative;
@@ -25,10 +25,20 @@ body{
 }
 .content{
 	width: $content-width;
-	min-width: $content-min-width;
+	// min-width: $content-min-width;
 	margin: 0 auto;
 	height: 100%;
 	position: relative;
+	a{
+		color: #e75151;
+		font-weight: 700;
+		text-decoration: none;
+	}
+	pre{
+		margin: 5px 0;
+		border:1px solid #ddd;
+		width: 100%;
+	}
 }
 .section{
 	padding:40px 0;
@@ -45,6 +55,7 @@ body{
 	background: #21262e;
 	height: 280px;
 	position: relative;
+	overflow: hidden;
 	.logo{
 		background: url(../img/logo.png);
 		width: 378px;
@@ -56,6 +67,7 @@ body{
 		left: 50%;
 		margin-left: -(378px/2);
 		margin-top: -(104px/2);
+    	transition: all 0.3s ease;
 	}
 	.tagline{
 		position: absolute;
@@ -73,11 +85,15 @@ body{
 	nav{
 		text-align: right;
 		color:#fff;
+    	transition: all 0.3s ease;
+
 		ul{
 			padding-top: 20px;
 			li{
 				display: inline-block;
 				margin: 10px;
+    	transition: all 0.3s ease;
+				
 			}
 			.donate{
 				background: #f3d661;
@@ -89,6 +105,19 @@ body{
 		}
 	}
 }
+
+
+.pitch{
+	background: #eee;
+	border-top: 3px solid #e75151;
+	li{
+		padding: 10px 0;
+		p{
+			padding:5px 0;
+		}
+	}
+}
+
 
 //UI Elements
 
@@ -115,4 +144,17 @@ body{
 		}	
 	}
 
+}
+
+
+@media only screen and (max-width: 980px){
+	.header{
+		nav{
+			font-size: 10pt;
+			text-align: center;
+		}
+		.logo{
+			transform: scale(0.9,0.9);
+		}
+	}	
 }

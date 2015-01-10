@@ -7,6 +7,8 @@
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="vendor/highlight/styles/github.css">
+	
 </head>
 <body>
 	<div class="header">
@@ -21,79 +23,111 @@
 			</nav>
 			<div class="logo"></div>
 			<div class="tagline">
-			<h1>A Modern UI Collection for Web Developers</h1></div>
+				<h1>A Modern UI Collection for Web Developers</h1></div>
+			</div>
 		</div>
-	</div>
-	<!-- /.header -->
+		<!-- /.header -->
 
-	<div class="pitch section">
-		<div class="content">
-			<ul>
-				<li>
-					<h2>What can I do with Atomic?</h2>
-					<p>Atomic is a new collection of UI elements that will give your web projects a fresh, minimal look, while offering you a set of beautifully designed, user experience-oriented components, so you can focus on what matters the most. </p>
-				</li>
-				<li>
-					<h2>Getting Started</h2>
-					<p>Kickstarting your project with Atomic couldn't be simpler, either <a href="#">download</a> the library or import it with bower into your project using</p>
-					bower install atomic --save 
-					<p>Reference atomic.css and atomic.js in your code and you're all set up.</p>
-				</li>
-			</ul>
+		<div class="pitch section">
+			<div class="content">
+				<ul>
+					<li>
+						<h2>What is Atomic?</h2>
+						<p>Atomic is a new collection of UI elements that will give your web projects a fresh, minimal look, while offering you a set of beautifully designed, user experience-oriented components, so you can focus on what matters the most: developing quick and effectively</p>
+					</li>
+					<li>
+						<h2>Getting Started</h2>
+						<p>Kickstarting your project with Atomic couldn't be simpler, either <a href="#">download</a> the library or import it with bower into your project using</p>
+						<pre><code>bower install atomic --save</code></pre>
+						<p>Reference atomic.css and atomic.js in your code and you're all set up.</p>
+						<pre><code class="html">
+							...
+							<link rel="stylesheet" href="/css/atomic.css"></link>
+							<script src="/js/atomic.js"></script>
+							...
+						</code></pre>
+					</li>
+				</ul>
+			</div>
 		</div>
-	</div>
-	<!-- /.pitch -->
-	<div class="main">
-		<div class="content">
-			
-			<section class="buttons">
-				<button class="atomic button accept">Accept</button>
-				<button class="atomic button cancel">Cancel</button>
-				<button class="atomic button disabled">Disabled</button>
-			</section>
+		<!-- /.pitch -->
+		<div class="main">
+			<div class="content">
+
+				<section class="buttons">
+					<button class="atomic button accept">Accept</button>
+					<button class="atomic button cancel">Cancel</button>
+					<button class="atomic button disabled">Disabled</button>
+				</section>
 
 
 
 
+			</div>
 		</div>
-	</div>
-	<!-- /.main -->
+		<!-- /.main -->
 
-	<div class="footer">
-		<div class="content">
-			
+		<div class="footer">
+			<div class="content">
+
+			</div>
 		</div>
-	</div>
-	<!-- /.footer -->
+		<!-- /.footer -->
 
-</body>
-
-
-<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
-
-<script type="text/javascript" src="js/jquery.easing.min.js"></script>
-
-<script type="text/javascript" src="js/jquery.firefly-0.3.js"></script>
+	</body>
 
 
-<script type="text/javascript">
+	<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+
+	<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+
+	<script type="text/javascript" src="js/jquery.firefly-0.3.js"></script>
 
 
-	$('.header').mousemove(function(e){
-		var amountMovedX = (e.pageX * -1 / 8);
-		var amountMovedY = (e.pageY * -1 / 8);
-		$('.header').css('background-position', amountMovedX + 'px ' + amountMovedY + 'px');
-	});
+	<script type="text/javascript">
 
-	$.firefly({
-		color: '#e75151',
-		minPixel: 1,
-		maxPixel: 2,
-		total : 70,
-		on: '.header'
-	});
+
+		$('.header').mousemove(function(e){
+			var amountMovedX = (e.pageX * -1 / 8);
+			var amountMovedY = (e.pageY * -1 / 8);
+			$('.header').css('background-position', amountMovedX + 'px ' + amountMovedY + 'px');
+		});
+
+		$.firefly({
+			color: '#e75151',
+			minPixel: 1,
+			maxPixel: 2,
+			total : 70,
+			on: '.header'
+		});
+
+	</script>
+
+	<script type="text/javascript" src="vendor/highlight/highlight.pack.js"></script>
+
+	<script type="text/javascript">
+		function htmlEntities(str) {
+			return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;') ;
+		}
+		function reindent(str){
+			return str.replace(/^\s+/mg, "")
+		}
+
+		$(document).ready(function($) {
+			$('code.html')[0].innerHTML = reindent($('code.html')[0].innerHTML);
+
+			$('code.html').html(htmlEntities($('code.html').html()));
+			hljs.initHighlightingOnLoad();
+		});
+
+
+	// p.textContent = p.textContent.replace(/^\s+/mg, "");
+
+
+
 
 </script>
+
 
 </html>
 
