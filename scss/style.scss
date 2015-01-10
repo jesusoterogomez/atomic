@@ -16,7 +16,8 @@ $color-on-light:#000;
 
 $padding-default:8px 14px;
 
-$content-width:980px;
+$content-width:80%;
+$content-min-width:980px;
 body{
 	width: 100%;
 	position: relative;
@@ -24,11 +25,14 @@ body{
 }
 .content{
 	width: $content-width;
+	min-width: $content-min-width;
 	margin: 0 auto;
 	height: 100%;
 	position: relative;
 }
-
+.section{
+	padding:40px 0;
+}
 .atomic{
 	font:12pt 'Lato', sans-serif;
 }

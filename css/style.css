@@ -1,7 +1,9 @@
 /* Defaults */
 body { width: 100%; position: relative; font: 12pt 'Lato', sans-serif; }
 
-.content { width: 980px; margin: 0 auto; height: 100%; position: relative; }
+.content { width: 80%; min-width: 980px; margin: 0 auto; height: 100%; position: relative; }
+
+.section { padding: 40px 0; }
 
 .atomic { font: 12pt 'Lato', sans-serif; }
 
