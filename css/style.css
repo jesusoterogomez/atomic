@@ -1,5 +1,5 @@
 /* Defaults */
-.body { width: 100%; position: relative; }
+body { width: 100%; position: relative; font: 12pt 'Lato', sans-serif; }
 
 .content { width: 980px; margin: 0 auto; height: 100%; position: relative; }
 
@@ -7,8 +7,14 @@
 
 .credits { display: none; }
 
-.header { background: #21262e; height: 250px; position: relative; }
+.header { background: #21262e; height: 280px; position: relative; }
 .header .logo { background: url(../img/logo.png); width: 378px; display: block; margin: 0 auto; position: absolute; top: 50%; height: 104px; left: 50%; margin-left: -189px; margin-top: -52px; }
+.header .tagline { position: absolute; bottom: 45px; width: 100%; }
+.header .tagline h1 { text-align: center; color: #fff; font-weight: 300; font-size: 11pt; opacity: 0.9; }
+.header nav { text-align: right; color: #fff; }
+.header nav ul { padding-top: 20px; }
+.header nav ul li { display: inline-block; margin: 10px; }
+.header nav ul .donate { background: #f3d661; padding: 6px 10px; color: #333; border-radius: 4px; font-weight: 700; }
 
 .button.atomic { outline: 0; border: none; border-radius: 4px; padding: 8px 14px; }
 .button.atomic.disabled { color: #666; background: #ccc; }

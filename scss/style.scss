@@ -17,9 +17,10 @@ $color-on-light:#000;
 $padding-default:8px 14px;
 
 $content-width:980px;
-.body{
+body{
 	width: 100%;
 	position: relative;
+	font:12pt 'Lato', sans-serif;
 }
 .content{
 	width: $content-width;
@@ -38,7 +39,7 @@ $content-width:980px;
 
 .header{
 	background: #21262e;
-	height: 250px;
+	height: 280px;
 	position: relative;
 	.logo{
 		background: url(../img/logo.png);
@@ -51,6 +52,37 @@ $content-width:980px;
 		left: 50%;
 		margin-left: -(378px/2);
 		margin-top: -(104px/2);
+	}
+	.tagline{
+		position: absolute;
+		bottom: 45px;
+		width: 100%;
+		h1{
+			text-align: center;
+			color: #fff;
+			font-weight: 300;
+			font-size: 11pt;
+			opacity: 0.9;
+			// text-transform: uppercase;
+		}
+	}
+	nav{
+		text-align: right;
+		color:#fff;
+		ul{
+			padding-top: 20px;
+			li{
+				display: inline-block;
+				margin: 10px;
+			}
+			.donate{
+				background: #f3d661;
+				padding: 6px 10px;
+				color:#333;
+				border-radius: $border-radius;
+				font-weight: 700;
+			}
+		}
 	}
 }
 
