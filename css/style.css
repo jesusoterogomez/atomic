@@ -1,23 +1,46 @@
 /* Defaults */
 body { width: 100%; position: relative; font: 12pt 'Lato', sans-serif; }
 
-.content { width: 980px; margin: 0 auto; height: 100%; position: relative; }
+input { font: 12pt 'Lato', sans-serif; }
 
-.atomic { font: 12pt 'Lato', sans-serif; }
+.content { width: 80%; max-width: 1200px; margin: 0 auto; height: 100%; position: relative; }
+.content a { color: #e75151; font-weight: 700; text-decoration: none; }
+.content pre { margin: 5px 0; border: 1px solid #ddd; width: 100%; border-radius: 4px; }
+.content p { padding: 5px 0; }
+.content p code { border-radius: 4px; color: #333; background: #f8f8f8; padding: 1px 4px; border: 1px solid #ddd; }
+
+.margin5 { margin: 5px; }
+
+.section { padding-bottom: 20px; }
+.section .section-title { border-left: 3px solid #e75151; padding: 5px 8px; position: relative; left: -8px; }
+.section h2.section-title { font-size: 14pt; }
+
+.start { padding-top: 40px; }
+
+section { padding-bottom: 20px; }
 
 .credits { display: none; }
 
-.header { background: #21262e; height: 280px; position: relative; }
-.header .logo { background: url(../img/logo.png); width: 378px; display: block; margin: 0 auto; position: absolute; top: 50%; height: 104px; left: 50%; margin-left: -189px; margin-top: -52px; }
+.header { background: #1e242e; height: 280px; position: relative; }
+.header .logo { background: url(../img/logo.png); width: 378px; display: block; margin: 0 auto; position: absolute; top: 50%; height: 104px; left: 50%; margin-left: -189px; margin-top: -52px; -webkit-transition: all 0.3s ease; transition: all 0.3s ease; }
 .header .tagline { position: absolute; bottom: 45px; width: 100%; }
 .header .tagline h1 { text-align: center; color: #fff; font-weight: 300; font-size: 11pt; opacity: 0.9; }
-.header nav { text-align: right; color: #fff; }
+.header nav { text-align: right; color: #fff; -webkit-transition: all 0.3s ease; transition: all 0.3s ease; }
 .header nav ul { padding-top: 20px; }
-.header nav ul li { display: inline-block; margin: 10px; }
+.header nav ul li { display: inline-block; margin: 10px; -webkit-transition: all 0.3s ease; transition: all 0.3s ease; }
 .header nav ul .donate { background: #f3d661; padding: 6px 10px; color: #333; border-radius: 4px; font-weight: 700; }
+.header nav ul .donate a { color: #333; }
 
-.button.atomic { outline: 0; border: none; border-radius: 4px; padding: 8px 14px; }
-.button.atomic.disabled { color: #666; background: #ccc; }
-.button.atomic.accept { color: #fff; background: #108EF2; }
-.button.atomic.cancel { color: #fff; background: #F24C3D; }
-.button.atomic:active { -webkit-transform: scale(0.95, 0.95); -ms-transform: scale(0.95, 0.95); transform: scale(0.95, 0.95); }
+.pitch { background: #eee; border-top: 3px solid #e75151; }
+.pitch li { padding: 10px 0; }
+
+.main { background: #eee; }
+
+.footer { background: #eee; height: 200px; }
+
+.ib { display: inline-block; }
+
+.absolute { position: absolute; }
+
+@media only screen and (max-width: 980px) { .header nav { font-size: 10pt; text-align: center; }
+  .header .logo { -webkit-transform: scale(0.7, 0.7); -ms-transform: scale(0.7, 0.7); transform: scale(0.7, 0.7); } }

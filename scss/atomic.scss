@@ -1,0 +1,183 @@
+/*
+
+Atomic.css - A Modern UI Collection for Web Developers
+
+Author: Jesus Otero.
+Site: http://jesusoterogomez.com
+Version: 0.0.1-pre-alpha
+
+*/
+
+// Defaults 
+$border-radius:4px;
+
+$color-disabled:#666;
+$color-default:green;
+$color-primary:blue;
+$color-cancel:red;
+
+$bg-disabled:#ccc;
+$bg-default:green;
+$bg-primary:#108EF2;
+$bg-highlight:#37a6ff;
+
+$bg-cancel:#F24C3D;
+
+
+$highlight:#e75151;
+
+$color-on-dark:#fff;
+$color-on-light:#000;
+
+$padding-default:8px 14px;
+$padding-horizontal:14px;
+$padding-vertical:8px;
+
+
+
+/*UI Collection*/
+.atomic{
+	font:12pt 'Lato', sans-serif;
+	transition: all 0.1s ease;
+	&.button{
+		font: 10pt 'Lato', sans-serif;
+		font-weight: 700;
+		text-transform: uppercase;
+		outline: 0;
+		border:none;
+		border-radius:$border-radius;
+		padding:$padding-default;
+		color: $color-on-dark;
+		background: $bg-primary;	
+		cursor: hand;
+		cursor: pointer;
+		opacity: 1;
+		&.disabled{
+			color: $color-disabled;
+			pointer-events:none;
+			background: $bg-disabled;
+			cursor: none;
+		}
+		&.accept{
+			color: $color-on-dark;
+			background: $bg-primary;			
+		}
+		&.cancel{
+			color: $color-on-dark;
+			background: $bg-cancel;
+		}
+		&:active{
+			transform: scale(0.97,0.97);
+		}
+		&:hover{
+			opacity: 0.95;
+
+		}
+
+	}
+	&.dropdown{
+		position: relative;
+		vertical-align: top;
+		width: auto;
+		background: $bg-primary;
+		color: $color-on-dark;
+		text-transform: uppercase;
+		font-size: 10pt;
+		border-radius: $border-radius;
+		display: inline-block;
+		font-weight: 700;
+		cursor: pointer;
+		&:before{
+			position: absolute;
+			content: "";
+			right: $padding-horizontal/1.5;
+			top: 50%;
+			margin-top: -3px;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 6px 4px 0 4px;
+			border-color: #ffffff transparent transparent transparent;
+		}
+		& > span{
+			position: absolute;
+			opacity: 1;
+			left: $padding-horizontal;
+			top: $padding-vertical;
+		}
+		&:after{
+			content: attr(data-placeholder);
+			display: block;
+			padding: $padding-default;
+			margin-right: $padding-horizontal;
+			visibility: visible;
+			transition: all 0.3s ease;
+		}
+		ul{
+			margin: 0;
+			left: 0;
+			position: relative;
+			top: 0;
+			z-index: 1000;
+			visibility: hidden;
+			opacity: 0;
+			box-sizing:border-box;
+			height: 0;
+			transition: all 0.3s ease;
+			li{
+				opacity: 0;
+				position: relative;
+				top:100%;
+				background: $bg-primary;
+				padding: $padding-default;
+				margin: 0;
+				padding-right: $padding-horizontal*3;
+				box-sizing:border-box;
+				transition: all 0.3s ease;
+				&:last-child{
+					border-radius: $border-radius;
+					border-top-left-radius: 0;
+					border-top-right-radius: 0;
+				}
+				&:hover{
+					background: $bg-highlight;
+				}
+				&.active{
+					&:after{
+						position: absolute;
+						content: "";
+						height: 8px;
+						width: 8px;
+						border-radius: 50%;
+						top:50%;
+						right: $padding-horizontal/1.5;
+						margin-top: -4px;
+						background: $color-on-dark;
+					}
+				}
+			}
+
+		}
+		&.open{
+			&:after,& span, &:before{
+				opacity: 0.5;
+			}
+			border-bottom-left-radius: 0;
+			border-bottom-right-radius: 0;		
+			ul{
+				opacity: 1;
+				position: relative;
+				visibility: visible;
+				li{
+					opacity: 1;
+				}
+			}
+
+		}			
+		&.atomic-loaded{
+			&:after{
+				opacity: 0;
+			}
+		}
+	}
+}

@@ -3,10 +3,16 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Atomic UI - Minimal UI Collection for Developers</title>
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="shortcut icon" href="img/favicon.png"/>
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/atomic.css">
+
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="vendor/highlight/styles/github.css">
+	
 </head>
 <body>
 	<div class="header">
@@ -16,81 +22,161 @@
 					<li>Docs</li>
 					<li>About</li>
 					<li>Donate</li>
-					<li class="donate">Download</li>
+					<li class="donate"><a href="download/atomic-pre-alpha.zip" download="atomic-pre-alpha">Download</a></li>
 				</ul>
 			</nav>
 			<div class="logo"></div>
 			<div class="tagline">
-			<h1>A Modern UI Collection for Web Developers</h1></div>
+				<h1>A Modern UI Collection for Web Developers</h1></div>
+			</div>
 		</div>
-	</div>
-	<!-- /.header -->
+		<!-- /.header -->
 
-	<div class="pitch">
-		<div class="content">
-			<ul>
-				<li>
-					<h2>What can I do with Atomic?</h2>
-				</li>
-				<li>
-					<h2>Getting Started</h2>
-					
-				</li>
-			</ul>
+		<div class="pitch section start">
+			<div class="content">
+				<ul>
+					<li>
+						<h2>What is Atomic?</h2>
+						<p>Atomic is a new collection of UI elements that will give your web projects a fresh, minimal look, while offering you a set of beautifully designed, easy to use components, ready to be included in your code with <i>plug and play</i> simplicity, so you can focus on what matters the most: developing quick and effectively</p>
+					</li>
+					<li>
+						<h2>Getting Started</h2>
+						<p>Kickstarting your project with Atomic couldn't be simpler, either <a href="download/atomic-pre-alpha.zip" download="atomic-pre-alpha">download</a> the library or import it with bower into your project using</p>
+						<pre><code>bower install atomic --save</code></pre>
+						<p>Reference atomic.css and atomic.js in your code and you're all set up.</p>
+						<pre><code class="html">
+							<link rel="stylesheet" href="/css/atomic.css"></link>
+							<script src="/js/atomic.js"></script>
+						</code></pre>
+					</li>
+
+					<!-- <li>
+						<h2>The Million Dollar Question... Why should I use Atomic?</h2>
+						<ul>
+							<li>
+								<h3>Simple</h3>
+								<p>Atomic is easy to use, all you need to know is plain HTML, add a couple classes to your usual components and develop away.</p>
+							</li>
+							<li>
+								<h3>Good Looking</h3>
+								<p></p>
+							</li>
+							<li>
+								<h3>Consistent</h3>
+								<p>Atomic takes the approach of unifying all the UI components as much as possible, in order to ...</p>
+							</li>
+						</ul>
+					</li> -->
+				</ul>
+			</div>
 		</div>
-	</div>
-	<!-- /.pitch -->
-	<div class="main">
-		<div class="content">
-			
-			<section class="buttons">
-				<button class="atomic button accept">Accept</button>
-				<button class="atomic button cancel">Cancel</button>
-				<button class="atomic button disabled">Disabled</button>
-			</section>
+		<!-- /.pitch -->
+		<div class="main section">
+			<div class="content">
+				<h2 class="section-title">Components</h2>
+
+				<p>All components in Atomic require the class <code>atomic</code> to be added to the HTML Element you want to apply the awesomeness to.</p>
+
+				<section class="buttons">
+					<h3 class="section-title">Buttons</h3>
+					<p>If you have a screen, you need buttons. With Atomic's simple markup, you can transform any HTML button into a great Atomic Button in seconds. Complete with hover and click animations by just adding <code>class="atomic button"</code> to your HTML element and optionally, a class for the button state.</p> <p>See the example below: </p>
+
+					<button class="margin5 atomic button">Accept</button>
+					<button class="margin5 atomic button cancel">Cancel</button>
+					<button class="margin5 atomic button disabled">Disabled</button>
+					<pre><code class="html">
+						<button class="atomic button">Accept</button>
+						<button class="atomic button cancel">Cancel</button>
+						<button class="atomic button disabled">Disabled</button>
+					</code></pre>
+				</section>
+
+				<section class="buttons">
+					<h3 class="section-title">Dropdown</h3>
+					<p>Dropdowns are not usually easy to get right. With Atomic, you just put an old fashioned list within a container with <code>class="atomic dropdown"</code> add an attribute for the placeholder text with <code>data-placeholder="Example"</code> and let Atomic do its magic. You'll get a fully featured dropdown filled with eye candy. <p>See the example below: </p>
+
+					<div class="margin5 atomic dropdown" data-placeholder="Choose your Favorite">
+						<ul>
+							<li>Pizza</li>
+							<li>Hamburgers</li>
+							<li>Mac & Cheese</li>
+						</ul>
+					</div>
+					<pre>
+<code>&#x3C;div class=&#x22;atomic dropdown&#x22; data-placeholder=&#x22;Choose Your Favorite&#x22;&#x3E;
+    &#x3C;ul&#x3E;
+        &#x3C;li&#x3E;Pizza&#x3C;/li&#x3E;
+        &#x3C;li&#x3E;Hamburgers&#x3C;/li&#x3E;
+        &#x3C;li&#x3E;Mac &#x26; Cheese&#x3C;/li&#x3E;
+    &#x3C;/ul&#x3E;
+&#x3C;/div&#x3E;</code></pre>	
+<p>
+Setting the controller's width is entirely optional, as the dropdown will resize to any content you add to it. If you set the width manually, the content will wrap as needed.</p>		
+						</section>
 
 
+					</div>
+				</div>
+				<!-- /.main -->
+
+				<div class="footer">
+					<div class="content">
+
+					</div>
+				</div>
+				<!-- /.footer -->
+
+			</body>
 
 
-		</div>
-	</div>
-	<!-- /.main -->
+			<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
 
-	<div class="footer">
-		<div class="content">
-			
-		</div>
-	</div>
-	<!-- /.footer -->
+			<script type="text/javascript" src="js/jquery.easing.min.js"></script>
 
-</body>
+			<script type="text/javascript" src="js/jquery.firefly-0.3.js"></script>
 
 
-<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+			<script type="text/javascript">
 
-<script type="text/javascript" src="js/jquery.easing.min.js"></script>
 
-<script type="text/javascript" src="js/jquery.firefly-0.3.js"></script>
+		// $('.header').mousemove(function(e){
+		// 	var amountMovedX = (e.pageX * -1 / 8);
+		// 	var amountMovedY = (e.pageY * -1 / 8);
+		// 	$('.header').css('background-position', amountMovedX + 'px ' + amountMovedY + 'px');
+		// });
 
+$.firefly({
+	color: '#e75151',
+	minPixel: 1,
+	maxPixel: 2,
+	total : 70,
+	on: '.header'
+});
+
+</script>
+
+<script type="text/javascript" src="vendor/highlight/highlight.pack.js"></script>
 
 <script type="text/javascript">
+	function htmlEntities(str) {
+		return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;') ;
+	}
+	function reindent(str){
+		return str.replace(/^\s+/mg, "")
+	}
 
+	$(document).ready(function($) {
 
-	$('.header').mousemove(function(e){
-		var amountMovedX = (e.pageX * -1 / 8);
-		var amountMovedY = (e.pageY * -1 / 8);
-		$('.header').css('background-position', amountMovedX + 'px ' + amountMovedY + 'px');
-	});
-
-	$.firefly({
-		color: '#e75151',
-		minPixel: 1,
-		maxPixel: 2,
-		total : 70,
-		on: '.header'
+		$.each($('code.html'), function(index, val) {
+			$(this)[0].innerHTML = reindent($(this)[0].innerHTML);
+			$(this).html(htmlEntities($(this).html()));
+		});
+		hljs.initHighlightingOnLoad();
 	});
 
 </script>
+
+<script type="text/javascript" src="js/atomic.js"></script>
 
 </html>
 
