@@ -9,12 +9,21 @@ $color-cancel:red;
 $bg-disabled:#ccc;
 $bg-default:green;
 $bg-primary:#108EF2;
+$bg-highlight:#37a6ff;
+
 $bg-cancel:#F24C3D;
+
+
+$highlight:#e75151;
 
 $color-on-dark:#fff;
 $color-on-light:#000;
 
 $padding-default:8px 14px;
+$padding-horizontal:14px;
+$padding-vertical:8px;
+
+
 
 $content-width:80%;
 // $content-min-width:980px;
@@ -23,8 +32,12 @@ body{
 	position: relative;
 	font:12pt 'Lato', sans-serif;
 }
+input{
+	font:12pt 'Lato', sans-serif;
+}
 .content{
 	width: $content-width;
+	max-width: 1200px;
 	// min-width: $content-min-width;
 	margin: 0 auto;
 	height: 100%;
@@ -38,13 +51,40 @@ body{
 		margin: 5px 0;
 		border:1px solid #ddd;
 		width: 100%;
+		border-radius: $border-radius;
+	}
+	p{
+		padding:5px 0;
+		code{
+			border-radius: $border-radius;
+			color: #333;
+			background: #f8f8f8;
+			padding: 1px 4px;
+			border:1px solid #ddd;
+
+		}
 	}
 }
-.section{
-	padding:40px 0;
+.margin5{
+	margin: 5px;
 }
-.atomic{
-	font:12pt 'Lato', sans-serif;
+.section{
+	padding-bottom: 20px;
+	.section-title{
+		border-left: 3px solid $highlight;
+		padding: 5px 8px;
+		position: relative;
+		left: -8px;
+	}
+	h2.section-title{
+		font-size: 14pt;
+	}
+}
+.start{
+	padding-top: 40px;
+}
+section{
+	padding-bottom: 20px;
 }
 .credits{
 	display: none;
@@ -68,7 +108,7 @@ body{
 		left: 50%;
 		margin-left: -(378px/2);
 		margin-top: -(104px/2);
-    	transition: all 0.3s ease;
+		transition: all 0.3s ease;
 	}
 	.tagline{
 		position: absolute;
@@ -86,14 +126,14 @@ body{
 	nav{
 		text-align: right;
 		color:#fff;
-    	transition: all 0.3s ease;
+		transition: all 0.3s ease;
 
 		ul{
 			padding-top: 20px;
 			li{
 				display: inline-block;
 				margin: 10px;
-    	transition: all 0.3s ease;
+				transition: all 0.3s ease;
 
 			}
 			.donate{
@@ -102,6 +142,9 @@ body{
 				color:#333;
 				border-radius: $border-radius;
 				font-weight: 700;
+				a{
+					color:#333;
+				}
 			}
 		}
 	}
@@ -113,40 +156,25 @@ body{
 	border-top: 3px solid #e75151;
 	li{
 		padding: 10px 0;
-		p{
-			padding:5px 0;
-		}
 	}
 }
 
 
+.main{
+	background: #eee;
+}
+.footer{
+	background: #eee;
+
+	height: 200px;
+}
 //UI Elements
-
-.button{
-	&.atomic{
-		outline: 0;
-		border:none;
-		border-radius:$border-radius;
-		padding:$padding-default;
-		&.disabled{
-			color: $color-disabled;
-			background: $bg-disabled;
-		}
-		&.accept{
-			color: $color-on-dark;
-			background: $bg-primary;			
-		}
-		&.cancel{
-			color: $color-on-dark;
-			background: $bg-cancel;
-		}
-		&:active{
-			transform: scale(0.95,0.95);
-		}	
-	}
-
+.ib{
+	display: inline-block;
 }
-
+.absolute{
+	position: absolute;
+}
 
 @media only screen and (max-width: 980px){
 	.header{
