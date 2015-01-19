@@ -1,0 +1,383 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"bg",
+				"bg-primary"
+			],
+			[
+				"coloro",
+				"color-on-light"
+			],
+			[
+				"color",
+				"color-disabled"
+			],
+			[
+				"border",
+				"border"
+			],
+			[
+				"hi",
+				"highlight"
+			],
+			[
+				"padding",
+				"padding-horizontal"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"pad",
+				"padding-horizontal"
+			],
+			[
+				"has",
+				"hasClass	.hasClass()"
+			],
+			[
+				"te",
+				"text	.text()"
+			],
+			[
+				"data",
+				"data	.data()"
+			],
+			[
+				"child",
+				"child-selected"
+			],
+			[
+				"padd",
+				"padding-vertical"
+			],
+			[
+				"padding-",
+				"padding-horizontal"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"border-top",
+				"border-top-right-radius"
+			],
+			[
+				"border-radius",
+				"border-top-left-radius"
+			],
+			[
+				"inner",
+				"innerHTML"
+			],
+			[
+				"html",
+				"html	.html()"
+			],
+			[
+				"text",
+				"textarea	Tag"
+			],
+			[
+				"content",
+				"content-width"
+			],
+			[
+				"ou",
+				"outline"
+			],
+			[
+				"color-on",
+				"color-on-dark"
+			],
+			[
+				"bg-d",
+				"bg-disabled"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 35.0,
+		"selected_items":
+		[
+			[
+				"reind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"riend",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"each",
+				"Snippet: jQuery.each"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"ww",
+				"Word Wrap: Toggle"
+			],
+			[
+				"scss",
+				"Set Syntax: SCSS"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"xml",
+				"Set Syntax: XML"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"lower",
+				"Convert Case: Lower Case"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"instlal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 520.0
+	},
+	"console":
+	{
+		"height": 120.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2deb499853c4371624f5a07e27c334aa' + 'bf8c4e67d14fb0525ba4f89698a6d7e1'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/wamp/www/atomicui",
+		"/C/wamp/www/atomicui/css",
+		"/C/wamp/www/atomicui/js",
+		"/C/wamp/www/atomicui/scss",
+		"/C/wamp/www/new pds.com.ve",
+		"/C/wamp/www/new pds.com.ve/img",
+		"/C/wamp/www/new pds.com.ve/scss"
+	],
+	"file_history":
+	[
+		"/C/wamp/www/atomicui/scss/style.scss",
+		"/C/wamp/www/atomicui/scss/atomic.scss",
+		"/C/wamp/www/atomicui/index.html",
+		"/C/wamp/www/atomicui/css/style.css",
+		"/C/wamp/www/atomicui/js/atomic.js",
+		"/C/wamp/www/atomicui/css/atomic.css",
+		"/C/Users/jesusoterogomez/Dropbox/Websites/hashtapp/index.html",
+		"/C/wamp/www/new pds.com.ve/index.php",
+		"/C/wamp/www/atomicui/bower.json",
+		"/C/cygwin/minTTY_zsh.reg",
+		"/C/Users/jesusoterogomez/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/wamp/www/index.php",
+		"/C/wamp/www/atomicui/css/style.css.map",
+		"/C/Users/jesusoterogomez/AndroidStudioProjects/Vault/app/src/main/res/layout/activity_main.xml",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/C/Users/jesusoterogomez/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/jesusoterogomez/Desktop/menu.json",
+		"/C/cygwin/home/jesusoterogomez/.zshrc",
+		"/C/cygwin/etc/fstab",
+		"/C/cygwin/home/jesusoterogomez/.minttyrc",
+		"/C/Users/jesusoterogomez/Desktop/minTTY_zsh.reg",
+		"/C/Users/jesusoterogomez/AppData/Roaming/Sublime Text 3/Packages/User/Monokai Soda Spacefunk..tmTheme"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 109.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"left",
+			"true",
+			"&#x9;",
+			"span",
+			"$(this).find('ul'",
+			"this",
+			"38a6ff",
+			"217ade",
+			"10",
+			"top",
+			"div",
+			"0.97",
+			"h2",
+			"div",
+			"png",
+			"color",
+			"blue",
+			"default",
+			"primary",
+			"enabdeled",
+			"Enabled",
+			"Disabled",
+			">\n",
+			"Disabled",
+			"!",
+			"label_id",
+			"password",
+			"label_password",
+			"    ",
+			"<td>error</td>",
+			"error",
+			" ",
+			"id",
+			"Category"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 32.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "atomic.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 218.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

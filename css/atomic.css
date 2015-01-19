@@ -29,3 +29,9 @@ Version: 0.0.1-pre-alpha
 .atomic.dropdown.open ul { opacity: 1; position: relative; visibility: visible; }
 .atomic.dropdown.open ul li { opacity: 1; }
 .atomic.dropdown.atomic-loaded:after { opacity: 0; }
+.atomic.text { font: 12pt 'Lato', sans-serif; outline: 0; border: none; border-radius: 4px; padding: 8px 14px; color: #000; background: #fff; border: 2px solid rgba(0, 0, 0, 0.2); opacity: 1; -webkit-transition: all 0.3s ease; transition: all 0.3s ease; }
+.atomic.text.disabled { color: #666; pointer-events: none; background: #ccc; cursor: none; }
+.atomic.text.accept { color: #fff; background: #108EF2; }
+.atomic.text.cancel { color: #fff; background: #F24C3D; }
+.atomic.text:hover { border: 2px solid rgba(0, 0, 0, 0.3); }
+.atomic.text:focus { opacity: 0.95; border: 2px solid #108EF2; }

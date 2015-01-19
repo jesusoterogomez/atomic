@@ -180,4 +180,43 @@ $padding-vertical:8px;
 			}
 		}
 	}
+	&.text{
+		font: 12pt 'Lato', sans-serif;
+		// font-weight: 700;
+		// text-transform: uppercase;
+		outline: 0;
+		border:none;
+
+		border-radius:$border-radius;
+		padding:$padding-default;
+		color: $color-on-light;
+		background: #fff;
+		border: 2px solid rgba(0,0,0,0.2);
+		opacity: 1;
+		transition: all 0.3s ease;
+		&.disabled{
+			color: $color-disabled;
+			pointer-events:none;
+			background: $bg-disabled;
+			cursor: none;
+		}
+		&.accept{
+			color: $color-on-dark;
+			background: $bg-primary;			
+		}
+		&.cancel{
+			color: $color-on-dark;
+			background: $bg-cancel;
+		}
+
+		&:hover{
+			border: 2px solid rgba(0,0,0,0.3);	
+
+
+		}
+		&:focus{
+			opacity: 0.95;
+			border: 2px solid $bg-primary;	
+		}
+	}
 }
