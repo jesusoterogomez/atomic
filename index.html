@@ -91,7 +91,16 @@
 					</code></pre>
 				</section>
 
-				<section class="buttons">
+
+<!-- 				<section class="timepicker">
+					<h3 class="section-title">Timepicker</h3>
+					<p>Timepicker</p>
+
+					<input id="dp" value="1/26/2015, 11:45 PM" class="atomic timepicker" placeholder="Select a Date"></input>
+				</section> -->
+
+
+				<section class="dropdown">
 					<h3 class="section-title">Dropdown</h3>
 					<p>Dropdowns are not usually easy to get right. With Atomic, you just put an old fashioned list within a container with <code>class="atomic dropdown"</code> add an attribute for the placeholder text with <code>data-placeholder="Example"</code> and let Atomic do its magic. You'll get a fully featured dropdown filled with eye candy. <p>See the example below: </p>
 
@@ -110,33 +119,134 @@
         &#x3C;li&#x3E;Mac &#x26; Cheese&#x3C;/li&#x3E;
     &#x3C;/ul&#x3E;
 &#x3C;/div&#x3E;</code></pre>	
-<p>
-Setting the controller's width is entirely optional, as the dropdown will resize to any content you add to it. If you set the width manually, the content will wrap as needed.</p>		
-						</section>
+							<p>
+								Setting the controller's width is entirely optional, as the dropdown will resize to any content you add to it. If you set the width manually, the content will wrap as needed.</p>		
+							</section>
 
 
+
+							<h3 class="section-title">Text Inputs</h3>
+							<p>Atomic Text Inputs with Validation for Incomplete fields or invalid emails</p>
+							<section class="textinput">
+								<input class="atomic text" type="text" placeholder="Enter your Name">
+								<input class="atomic text" type="email" placeholder="Enter your Email" data-validate="email">
+								<input class="atomic text" type="password" placeholder="Enter your Password">
+
+
+								<pre><code class="html">
+						<input class="atomic text" type="text" placeholder="Enter your Name">
+								<input class="atomic text" type="email" placeholder="Enter your Email" data-validate="email">
+								<input class="atomic text" type="password" placeholder="Enter your Password">
+								</code></pre>
+							</section>
+
+
+							<h3 class="section-title">Toggle Switches</h3>
+							<p>Atomic Switches</p>
+							<section class="switches">
+								<input class="atomic switch" type="checkbox" checked>
+
+								<input class="atomic switch" type="checkbox">
+
+
+								<pre><code class="html">
+									<input class="atomic switch" type="checkbox" checked>
+									<input class="atomic switch" type="checkbox">
+								</code></pre>
+							</section>
+
+							<h3 class="section-title">Checkbox</h3>
+							<p>Atomic Checkboxes</p>
+							<section class="switches">
+								<label>
+									<input class="atomic checkbox" type="checkbox" name="atomic" checked>
+									Atomic Checkbox 1
+								</label>
+								<label>
+									<input class="atomic checkbox" type="checkbox" name="atomic">
+									Atomic Checkbox 2
+								</label>
+								<label>
+									<input class="atomic checkbox" type="checkbox" name="atomic" checked>
+									Atomic Checkbox 3
+								</label>
+
+								<pre><code class="html">
+									<label>
+										<input class="atomic checkbox" type="checkbox" name="atomic" checked>
+										Atomic Checkbox 1
+									</label>
+
+									<label>
+										<input class="atomic checkbox" type="checkbox" name="atomic">
+										Atomic Checkbox 2
+									</label>
+
+									<label>
+										<input class="atomic checkbox" type="checkbox" name="atomic" checked>
+										Atomic Checkbox 3
+									</label>
+								</code></pre>
+							</section>
+
+
+						<h3 class="section-title">Radio Buttons</h3>
+							<p>Atomic Radio Buttons</p>
+							<section class="switches">
+								<label>
+									<input class="atomic radio" type="radio" name="atomic" checked>
+									Atomic radio 1
+								</label>
+								<label>
+									<input class="atomic radio" type="radio" name="atomic">
+									Atomic radio 2
+								</label>
+								<label>
+									<input class="atomic radio" type="radio" name="atomic" >
+									Atomic radio 3
+								</label>
+
+							<pre><code class="html">
+								<label>
+									<input class="atomic radio" type="radio" name="atomic-radio" checked>
+									Atomic radio 1
+								</label>
+								<label>
+									<input class="atomic radio" type="radio" name="atomic-radio">
+									Atomic radio 2
+								</label>
+								<label>
+									<input class="atomic radio" type="radio" name="atomic-radio" checked >
+									Atomic radio 3
+								</label>
+
+								</code></pre>
+							</section>
+
+
+
+						</div>
 					</div>
-				</div>
-				<!-- /.main -->
+					<!-- /.main -->
 
-				<div class="footer">
-					<div class="content">
+					<div class="footer">
+						<div class="content">
 
+						</div>
 					</div>
-				</div>
-				<!-- /.footer -->
+					<!-- /.footer -->
 
-			</body>
-
-
-			<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
-
-			<script type="text/javascript" src="js/jquery.easing.min.js"></script>
-
-			<script type="text/javascript" src="js/jquery.firefly-0.3.js"></script>
+				</body>
 
 
-			<script type="text/javascript">
+				<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+
+				<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+
+				<script type="text/javascript" src="js/jquery.firefly-0.3.js"></script>
+
+
+				<script type="text/javascript">
 
 
 		// $('.header').mousemove(function(e){
