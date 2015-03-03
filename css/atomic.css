@@ -36,3 +36,26 @@ Version: 0.0.1-pre-alpha
 .atomic.text:hover { border: 2px solid rgba(0, 0, 0, 0.3); }
 .atomic.text:focus { opacity: 0.95; border: 2px solid #108EF2; }
 .atomic.timepicker { font: 12pt 'Lato', sans-serif; outline: 0; border: none; border-radius: 4px; padding: 8px 14px; color: #000; background: #fff; border: 2px solid rgba(0, 0, 0, 0.2); opacity: 1; -webkit-transition: all 0.3s ease; transition: all 0.3s ease; }
+.atomic.switch { display: inline-block; margin: 5px; width: 2em; height: 1em; position: relative; visibility: hidden; }
+.atomic.switch:before { display: block; visibility: visible; content: ''; width: 100%; border-radius: 40px; height: 100%; border: 3px solid #ccc; -webkit-transition: all 0.3s ease; transition: all 0.3s ease; }
+.atomic.switch:after { display: block; content: ''; height: 100%; width: 50%; background: #ccc; position: absolute; visibility: visible; margin: 3px; -webkit-transform: scale(0.75, 0.75); -ms-transform: scale(0.75, 0.75); transform: scale(0.75, 0.75); left: 0; top: 0; border-radius: 50%; -webkit-transition: all 0.3s ease; transition: all 0.3s ease; }
+.atomic.switch:checked:after { left: 50%; background: #108EF2; }
+.atomic.switch:checked:before { border-color: #108EF2; }
+.atomic.switch.flat:before { border-color: #ccc; background: #ccc; }
+.atomic.switch.flat:after { margin: 0; -webkit-transform: scale(0.6, 0.6); -ms-transform: scale(0.6, 0.6); transform: scale(0.6, 0.6); border: 3px solid rgba(0, 0, 0, 0.3); }
+.atomic.switch.flat:checked:after { border-color: #fff; }
+.atomic.switch.flat:checked:before { background: #108EF2; border-color: #108EF2; }
+.atomic.checkbox { display: inline-block; margin: 5px; width: 1em; height: 1em; position: relative; visibility: hidden; }
+.atomic.checkbox:before { display: block; visibility: visible; content: ''; width: 100%; border-radius: 4px; height: 100%; border: 3px solid #ccc; -webkit-transition: all 0.3s ease; transition: all 0.3s ease; }
+.atomic.checkbox:after { display: block; content: ''; height: 100%; width: 100%; position: absolute; margin: 3px; visibility: visible; -webkit-transform: scale(0.75, 0.75); -ms-transform: scale(0.75, 0.75); transform: scale(0.75, 0.75); left: 0; top: 0; background: transparent; border-radius: 2px; -webkit-transition: all 0.3s ease; transition: all 0.3s ease; }
+.atomic.checkbox:hover:after { background: #ccc; }
+.atomic.checkbox:checked:hover:after { background: #108EF2; }
+.atomic.checkbox:checked:after { background: #108EF2; }
+.atomic.checkbox:checked:before { border-color: #108EF2; }
+.atomic.radio { display: inline-block; margin: 5px; width: 1em; height: 1em; position: relative; visibility: hidden; }
+.atomic.radio:before { display: block; visibility: visible; content: ''; width: 100%; border-radius: 50%; height: 100%; border: 3px solid #ccc; -webkit-transition: all 0.3s ease; transition: all 0.3s ease; }
+.atomic.radio:after { display: block; content: ''; height: 100%; width: 100%; position: absolute; margin: 3px; visibility: visible; -webkit-transform: scale(0.75, 0.75); -ms-transform: scale(0.75, 0.75); transform: scale(0.75, 0.75); left: 0; top: 0; background: transparent; border-radius: 50%; -webkit-transition: all 0.3s ease; transition: all 0.3s ease; }
+.atomic.radio:hover:after { background: #ccc; }
+.atomic.radio:checked:hover:after { background: #108EF2; }
+.atomic.radio:checked:after { background: #108EF2; }
+.atomic.radio:checked:before { border-color: #108EF2; }
