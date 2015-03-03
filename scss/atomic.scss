@@ -73,7 +73,6 @@ $padding-vertical:8px;
 			opacity: 0.95;
 
 		}
-
 	}
 	&.dropdown{
 		position: relative;
@@ -219,4 +218,18 @@ $padding-vertical:8px;
 			border: 2px solid $bg-primary;	
 		}
 	}
+	&.timepicker{
+		font: 12pt 'Lato', sans-serif;
+		outline: 0;
+		border:none;
+		border-radius:$border-radius;
+		padding:$padding-default;
+		color: $color-on-light;
+		background: #fff;
+		border: 2px solid rgba(0,0,0,0.2);
+		opacity: 1;
+		transition: all 0.3s ease;
+	}
+
+
 }

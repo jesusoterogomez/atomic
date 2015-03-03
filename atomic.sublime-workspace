@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"fu",
+				"fun	Function"
+			],
+			[
 				"bg",
 				"bg-primary"
 			],
@@ -111,9 +115,13 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 35.0,
+		"height": 400.0,
 		"selected_items":
 		[
+			[
+				"close",
+				"Project: Close"
+			],
 			[
 				"reind",
 				"Indentation: Reindent Lines"
@@ -121,6 +129,18 @@
 			[
 				"riend",
 				"Indentation: Reindent Lines"
+			],
+			[
+				"on",
+				"Snippet: jQuery on handler"
+			],
+			[
+				"click",
+				"Snippet: jQuery click handler"
+			],
+			[
+				"func",
+				"Snippet: Function"
 			],
 			[
 				"each",
@@ -175,7 +195,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 520.0
+		"width": 408.0
 	},
 	"console":
 	{
@@ -197,7 +217,6 @@
 	"expanded_folders":
 	[
 		"/C/wamp/www/atomicui",
-		"/C/wamp/www/atomicui/css",
 		"/C/wamp/www/atomicui/js",
 		"/C/wamp/www/atomicui/scss",
 		"/C/wamp/www/new pds.com.ve",
@@ -206,12 +225,12 @@
 	],
 	"file_history":
 	[
-		"/C/wamp/www/atomicui/scss/style.scss",
 		"/C/wamp/www/atomicui/scss/atomic.scss",
 		"/C/wamp/www/atomicui/index.html",
-		"/C/wamp/www/atomicui/css/style.css",
 		"/C/wamp/www/atomicui/js/atomic.js",
 		"/C/wamp/www/atomicui/css/atomic.css",
+		"/C/wamp/www/atomicui/scss/style.scss",
+		"/C/wamp/www/atomicui/css/style.css",
 		"/C/Users/jesusoterogomez/Dropbox/Websites/hashtapp/index.html",
 		"/C/wamp/www/new pds.com.ve/index.php",
 		"/C/wamp/www/atomicui/bower.json",
@@ -245,6 +264,16 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"getHours",
+			"');\n",
+			"setDate",
+			"setToday",
+			"setDate",
+			"}\n",
+			"reset",
+			"this",
+			"accessed",
+			"argument",
 			"left",
 			"true",
 			"&#x9;",
@@ -304,7 +333,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 26.0
+		"height": 27.0
 	},
 	"input":
 	{
@@ -340,7 +369,7 @@
 	"project": "atomic.sublime-project",
 	"replace":
 	{
-		"height": 48.0
+		"height": 50.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -374,7 +403,7 @@
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 218.0,
 	"status_bar_visible": true,
 	"template_settings":

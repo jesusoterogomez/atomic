@@ -35,3 +35,4 @@ Version: 0.0.1-pre-alpha
 .atomic.text.cancel { color: #fff; background: #F24C3D; }
 .atomic.text:hover { border: 2px solid rgba(0, 0, 0, 0.3); }
 .atomic.text:focus { opacity: 0.95; border: 2px solid #108EF2; }
+.atomic.timepicker { font: 12pt 'Lato', sans-serif; outline: 0; border: none; border-radius: 4px; padding: 8px 14px; color: #000; background: #fff; border: 2px solid rgba(0, 0, 0, 0.2); opacity: 1; -webkit-transition: all 0.3s ease; transition: all 0.3s ease; }
